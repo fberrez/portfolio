@@ -1,0 +1,14 @@
+{
+  "name": "personnal-website",
+  "version": "1.0.0",
+  "description": "A Personnal website where I describe myself",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fberrez",
+  "license": "ISC",
+  "dependencies": {
+    "jquery": "^3.2.1"
+  }
+}
