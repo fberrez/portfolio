@@ -1,0 +1,51 @@
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	// background-image: url('../img/bkg-home.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+}
+
+
+body::before {
+	position: absolute;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	z-index: -1;
+}
+
+
+/* -------------------------------------- GLOBAL ANIMATIONS -------------------------------------- */
+.typed-cursor{
+	opacity: 1;
+	-webkit-animation: blink 0.7s infinite;
+	-moz-animation: blink 0.7s infinite;
+	animation: blink 0.7s infinite;
+}
+@keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+@-moz-keyframes blink{
+	0% { opacity:1; }
+	50% { opacity:0; }
+	100% { opacity:1; }
+}
+.typed-fade-out{
+    opacity: 0;
+    animation: 0;
+    transition: opacity .25s;
+}

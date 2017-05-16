@@ -9,6 +9,9 @@
   "author": "fberrez",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.2.1"
+    "angular": "^1.6.4",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
+    "typed.js": "^1.1.1"
   }
 }

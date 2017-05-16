@@ -1,0 +1,27 @@
+<div class="col-sm-12 col-lg-4">
+	<h3>- Je suis Florent Berrez, un apprenti développeur.</h3>
+	<p>Depuis 2014, j'étudie l'informatique dans plusieurs domaines : architecture, développement, conception...</p>
+	<p>Mais depuis toujours, le développement web m'a toujours intéressé.</p>
+</div>
+
+<div class="col-sm-12 col-lg-4">
+	<h3>Ce que j'ai fait.</h3>
+	<div ng-controller="presentationController as pController">
+		<div ng-repeat="study in pController.studies">
+			<div class="row">
+				<div class="col-md-4" ng-show="study.dateStop">
+					{{study.dateStart}} - {{study.dateStop}}
+				</div>
+				<div class="col-md-4" ng-hide="study.dateStop">
+					{{study.dateStart}}
+				</div>
+				<div class="col-md-8">
+					{{study.name}}
+				</div>
+			</div>
+			<div class="col md-12">
+				{{study.notes}}
+			</div>
+		</div>
+	</div>
+</div>
