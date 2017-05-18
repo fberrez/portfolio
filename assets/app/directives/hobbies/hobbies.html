@@ -1,0 +1,70 @@
+<div class="container" ng-controller="HobbiesController as hobbiesCtrl">
+    <div class="page-header">
+        <h1 class="text-center">Centre d'intérêts</h1>
+    </div>
+    	<div class="row">
+	    	<div class="col-md-12">
+	    		<h2>Ce que je lis.</h2>
+				<div class="row">
+				  <div class="col-sm-4 col-md-2" ng-repeat="book in hobbiesCtrl.books_FR" class="reading-list">
+				    <div class="thumbnail" ng-show="book.title">
+				      	<img ng-src="assets/app/directives/hobbies/assets/img/book-{{book.img}}.jpg" class="img-responsive reading-list-img" alt="{{book.title}}" ng-show="book.img">
+				      	<div class="caption">
+				        	<h3 class="reading-list-title">{{book.title}}</h3>
+				        <p ng-show="book.author">{{book.author}}</p>
+				      	</div>
+				    </div>
+				  </div>
+				</div>
+				<h2>Ce que je regarde.</h2>
+				<div class="row">
+				  <div class="col-sm-4 col-md-2" ng-repeat="movie in hobbiesCtrl.movies_FR" class="movie-list">
+				    <div class="thumbnail" ng-show="movie.title">
+				      	<img ng-src="assets/app/directives/hobbies/assets/img/movie-{{movie.img}}.jpg" class="img-responsive reading-list-img" alt="{{movie.title}}" ng-show="movie.img">
+				      	<div class="caption">
+				        	<h3 class="reading-list-title">{{movie.title}}</h3>
+				      	</div>
+				    </div>
+				  </div>
+				</div>
+	    	</div>
+    	</div>
+    	<div class="row">
+    		<div class="page-header">
+		        <h1 class="text-center">Musique</h1>
+		    </div>
+		    <div class="row">
+		    	<div class="col-md-6">
+		    		<div class="row">
+		    			<h2>Ce que je pratique.</h2>
+		    		</div>
+		    		<div class="row col-md-6">
+		    			<ul class="list-group">
+						  	<li class="list-group-item" ng-repeat="music in hobbiesCtrl.music_FR">
+						    	<span class="badge" ng-show="music.year_counter">{{music.year_counter}}</span>
+						    	{{music.title}}
+						    	<p class="text-muted" ng-show="music.level">{{music.level}}</p>
+						  	</li>
+						</ul>
+		    		</div>
+		    	</div>
+		    	<div class="col-md-6">
+		    		<div class="row">
+		    			<h2>Ce que j'écoute.</h2>
+		    		</div>
+		    		<div class="row">
+
+		    		</div>
+
+		    	</div>
+		    </div>
+    	</div>
+
+
+    	<!-- <div class="col-md-4">
+    		<h2>Musique</h2>
+    	</div>
+    	<div class="col-md-4">
+    		<h2>Cinéma</h2>
+    	</div> -->
+</div>

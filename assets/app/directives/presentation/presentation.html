@@ -1,27 +1,33 @@
-<div class="col-sm-12 col-lg-4">
-	<h3>- Je suis Florent Berrez, un apprenti développeur.</h3>
-	<p>Depuis 2014, j'étudie l'informatique dans plusieurs domaines : architecture, développement, conception...</p>
-	<p>Mais depuis toujours, le développement web m'a toujours intéressé.</p>
+<!-- <div class="row">
+	<div class="col-sm-12 col-lg-4">
+		<h3>- Je suis Florent Berrez, un apprenti développeur.</h3>
+		<p>Depuis 2014, j'étudie l'informatique dans plusieurs domaines : architecture, développement, conception...</p>
+		<p>Mais depuis toujours, le développement web m'a toujours intéressé.</p>
+	</div>
+</div> -->
+
+<div class="container">
+    <div class="page-header">
+        <h1 class="text-center">Ce que j'ai fait.</h1>
+    </div>
+    <ul class="timeline" ng-controller="PresentationController as pController">
+        <li ng-class="{ 'timeline-inverted': $odd }" ng-repeat="step in pController.steps_FR">
+          <div class="timeline-badge ng-class: step.badge.color;"><i class="glyphicon ng-class: step.badge.icon;"></i></div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">{{step.name}}</h4>
+              <p class="timeline-subtitle">
+              	<small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{step.dateStart}} <span ng-show="step.dateStop">- {{step.dateStop}}</span></small>
+              </p>
+              <p class="timeline-subtitle">
+              	<small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> {{step.place}}</small>
+              </p>
+            </div>
+            <div class="timeline-body">
+              <p>{{step.notes}}</p>
+            </div>
+          </div>
+        </li>
+    </ul>
 </div>
 
-<div class="col-sm-12 col-lg-4">
-	<h3>Ce que j'ai fait.</h3>
-	<div ng-controller="presentationController as pController">
-		<div ng-repeat="study in pController.studies">
-			<div class="row">
-				<div class="col-md-4" ng-show="study.dateStop">
-					{{study.dateStart}} - {{study.dateStop}}
-				</div>
-				<div class="col-md-4" ng-hide="study.dateStop">
-					{{study.dateStart}}
-				</div>
-				<div class="col-md-8">
-					{{study.name}}
-				</div>
-			</div>
-			<div class="col md-12">
-				{{study.notes}}
-			</div>
-		</div>
-	</div>
-</div>
