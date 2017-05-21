@@ -1,0 +1,39 @@
+<!-- <div class="row">
+	<div class="col-sm-12 col-lg-4">
+		<h3>- Je suis Florent Berrez, un apprenti développeur.</h3>
+		<p>Depuis 2014, j'étudie l'informatique dans plusieurs domaines : architecture, développement, conception...</p>
+		<p>Mais depuis toujours, le développement web m'a toujours intéressé.</p>
+	</div>
+</div> -->
+
+
+<div class="container container-padding">
+    <div class="page-header">
+        <h1 class="container-title grey text-center">{{'profile.title' | translate}}</h1>
+    </div>
+    <div class="row presentation-block">
+        <div class="col-md-4 ">
+            <h2>{{'profile.about.title' | translate}}</h2>
+            <div class="comment">
+                {{'profile.about.comment' | translate}}
+            </div>
+        </div>
+        <div class="col-md-4">
+            <img src="" alt="">
+        </div>
+        <div class="col-md-4">
+            <h2>Details</h2>
+            <div class="comment">
+                <p class="details-title">{{'profile.about.details.name.title' | translate}} :</p>
+                <p>Florent Berrez</p>
+                <p class="details-title">{{'profile.about.details.age.title' | translate}} :</p>
+                <p ng-controller="HomeController as homeCtrl">{{homeCtrl.yo}} {{'profile.about.details.age.value' | translate}}</p>
+                <p class="details-title">{{'profile.about.details.location.title' | translate}} :</p>
+                <p>{{'profile.about.details.location.value' | translate}}</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+

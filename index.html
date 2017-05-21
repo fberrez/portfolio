@@ -5,19 +5,33 @@
 
 	<!-- Bootstrap CSS link -->
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Font Awesome CSS link -->
+	<link rel="stylesheet" type="text/css" href="node_modules/font-awesome/css/font-awesome.min.css">
+	<!-- Font family import CSS link -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
-	<link rel="stylesheet" type="text/less" href="assets/app/directives/home/home.less">
-	<link rel="stylesheet" type="text/less" href="assets/app/directives/presentation/presentation.less">
-	<link rel="stylesheet" type="text/less" href="assets/app/directives/hobbies/hobbies.less">
+	<link rel="stylesheet" type="text/css" href="node_modules/NavigationIndicators/NavigationIndicators/css/component.css">
+	<link rel="stylesheet" type="text/css" href="node_modules/NavigationIndicators/NavigationIndicators/css/normalize.css">
+	<link rel="stylesheet" type="text/less" href="assets/app/directives/001-home/home.less">
+	<link rel="stylesheet" type="text/less" href="assets/app/directives/002-presentation/presentation.less">
+	<link rel="stylesheet" type="text/less" href="assets/app/directives/003-experience/experience.less">
+	<link rel="stylesheet" type="text/less" href="assets/app/directives/004-skill/skill.less">
+	<link rel="stylesheet" type="text/less" href="assets/app/directives/005-hobbies/hobbies.less">
 	<link rel="stylesheet" type="text/less" href="assets/css/style.less">
 
 
 </head>
-<body>
+<body ng-controller="TranslateCtrl" data-ibg-bg="assets/img/bkg-home-tower-blur.jpg">
+
+	<!-- <div id="navbar" class="navbar"></div> -->
 
 	<div id="home" class="home"></div>
 
 	<div id="presentation" class="presentation"></div>
+
+	<div id="experience" class="experience"></div>
+
+	<div id="skill" class="skill"></div>
 
 	<div id="hobbies" class="hobbies"></div>
 
@@ -35,19 +49,27 @@
 	<script src="node_modules/angular/angular.js" type="text/javascript" charset="utf-8"></script>
 	<!-- Angular-translate JS link -->
 	<script src="node_modules/angular-translate/dist/angular-translate.js" type="text/javascript" charset="utf-8"></script>
-	
-	
+	<!-- Navbar customization JJS link -->
+	<script src="node_modules/NavigationIndicators/NavigationIndicators/js/main.js" type="text/javascript" charset="utf-8"></script>
+	<script src="node_modules/NavigationIndicators/NavigationIndicators/js/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+
 	<!-- assets script links -->
 	<script src="assets/app/app.js" type="text/javascript" charset="utf-8"></script>
 	<!-- directives script links -->
-	<script src="assets/app/directives/home/home.js" type="text/javascript" charset="utf-8"></script>
-	<script src="assets/app/directives/presentation/presentation.js" type="text/javascript" charset="utf-8"></script>
-	<script src="assets/app/directives/hobbies/hobbies.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/directives/000-navbar/navbar.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/directives/001-home/home.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/directives/002-presentation/presentation.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/directives/003-experience/experience.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/directives/004-skill/skill.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/directives/005-hobbies/hobbies.js" type="text/javascript" charset="utf-8"></script>
 	<!-- controllers script links -->
+	<script src="assets/app/controllers/homeController.js" type="text/javascript" charset="utf-8"></script>
 	<script src="assets/app/controllers/presentationController.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/controllers/experienceController.js" type="text/javascript" charset="utf-8"></script>
+	<script src="assets/app/controllers/skillController.js" type="text/javascript" charset="utf-8"></script>
 	<script src="assets/app/controllers/hobbiesController.js" type="text/javascript" charset="utf-8"></script>
 	<!-- effect script links -->
-	<!-- <script src="assets/js/effect.js" type="text/javascript" charset="utf-8"></script> -->
+	<script src="assets/js/effect.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- <script src="assets/app/directives/home/assets/js/home-effect.js" type="text/javascript" charset="utf-8"></script> -->
 </body>
