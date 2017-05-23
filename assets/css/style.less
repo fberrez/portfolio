@@ -1,5 +1,4 @@
 /* -------------------------------------- VARIABLES INITIALISATION -------------------------------------- */
-
 @blue: 	#00cbcb;
 @white: #FFFFFF;
 @grey:	#333333;
@@ -7,7 +6,6 @@
 
 
 /* -------------------------------------- GLOBAL CSS -------------------------------------- */
-
 html,
 body {
 	width: 100%;
@@ -17,6 +15,7 @@ body {
 body {
 	color: #333;
 	font-family: 'Open Sans', sans-serif;
+    overflow-y: hidden;
 }
 
 
@@ -45,6 +44,8 @@ body::before {
 	padding-bottom: 40px;
 }
 
+
+/* -------------------------------------- MAIN COLOR -------------------------------------- */
 .blue {
 	color: @blue;
 }
@@ -56,6 +57,104 @@ body::before {
 .grey{
 	color: @grey;
 }
+
+/* -------------------------------------- TAG LINE -------------------------------------- */
+.tag-line {
+    padding: 3px 1px;
+    font-size: 18px;
+    line-height: 18px;
+    height: 25px;
+    transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+}
+.tag-line:hover {
+    background-color: #F2F2F2;
+    font-size: 22px;
+    cursor: default;
+}
+.filled-star > span {
+    color: @blue;
+}
+.normal-star > span {
+    color: @grey;
+}
+.tag-name {}
+.tag-score {
+    position: absolute;
+    right: 18px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+/* -------------------------------------- SPECIAL BUTTON EFFECT -------------------------------------- */
+.special-button {
+    position: relative;
+    display: inline-block;
+    letter-spacing: 1.2px;
+    padding: 12px 32px;
+    text-align: center;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    margin-top: 55px;
+    font-size: 20px;
+    text-decoration: none;
+}
+.special-button:focus {
+    outline: none;
+}
+.btn--primary {
+    color: @blue;
+}
+.btn--border {
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+.btn--animated {
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.btn--animated.btn--border.btn--primary {
+    border: 1px solid @blue;
+}
+.btn--animated:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: @blue;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0 50%;
+    transform-origin: 0 50%;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    z-index: -1;
+}
+.btn--animated:hover {
+    color: white;
+}
+.btn--animated:hover:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+    transition-timing-function: cubic-bezier(0.45, 1.64, 0.47, 0.66);
+}
+
+
 /* -------------------------------------- GLOBAL ANIMATIONS -------------------------------------- */
 .typed-cursor{
 	opacity: 1;

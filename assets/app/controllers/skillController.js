@@ -108,7 +108,7 @@ app.controller('SkillController', function($scope){
 			"level":5
 		},
 		{
-			"title":"English (Professional tongue)",
+			"title":"English (Professional level)",
 			"level":4
 		},
 		{

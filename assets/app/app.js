@@ -1,4 +1,4 @@
-var app = angular.module('persoWebSiteApp', ['pascalprecht.translate']);
+var app = angular.module('persoWebSiteApp', ['pascalprecht.translate', 'contactForm']);
 
 
 /* -------------------------------------- ANGULAR TRANSLATE PARAMETERS -------------------------------------- */
@@ -15,7 +15,7 @@ var translations_FR = {
 		about: 
 		{
 			title:"A propos",
-			comment:"Issu des mondes informatique et artistique, le web m'a toujours passionné. J'ai fait des études d'informatique...",
+			comment:"Issu des mondes informatique et artistique, le web m'a toujours passionné. Que ce soit dans sa dimension graphique ou son côté technique. Pour arriver à ce que je veux, je suis actuellement en étude d'informatique. En parallèle, je pratique le piano et la guitare. C'est une source d'inspiration pour moi. Les visites de musée, le cinéma, la musique, le sport rythment mon quotidien",
 			details:
 			{
 				name:
@@ -44,11 +44,11 @@ var translations_FR = {
 		title:"Centre d'interet",
 		booklist:
 		{
-			title:"Ce que je lis."
+			title:"Ce que je lis"
 		},
 		movielist:
 		{
-			title:"Ce que je regarde."
+			title:"Ce que je regarde"
 		}
 	},
 	skill:
@@ -69,6 +69,46 @@ var translations_FR = {
 		project:
 		{
 			title:"Voir le projet sur Github"
+		},
+		music:
+		{
+			title:"Musique",
+			titleCat1:"Ce que je pratique",
+			titleCat2:"Ce que j'écoute"
+		}
+	},
+	contact:
+	{
+		title:"Contact",
+		name:
+		{
+			label:"Votre nom",
+			error:
+			{
+				required:"Quel est votre nom ?"
+			}
+		},
+		email:
+		{
+			label:"Votre email",
+			error:
+			{
+				required:"Votre adresse email me permettra de vous répondre :)",
+				email:"Votre adresse ne semble pas valide"
+			}
+		},
+		message:
+		{
+			label:"Votre message",
+			error:
+			{
+				required:"Vous n'avez rien envie de me dire ? :("
+			}
+		},
+		btn:
+		{
+			send:"Envoyer",
+			reset:"Reinitialiser"
 		}
 	}
 };
@@ -78,7 +118,7 @@ var translations_EN = {
 	{
 		title: "Home",
 		yo: "",
-		subtitle: "Developer Web",
+		subtitle: "Web Developer",
 	},
 	profile:
 	{
@@ -86,7 +126,7 @@ var translations_EN = {
 		about: 
 		{
 			title:"About me",
-			comment:"Coming from the computer and artistic worlds, the web has always fascinated me. I studied computer science",
+			comment:"Coming from the computer and artistic worlds, the web has always fascinated me. Whether in its graphic dimension or its technical side. To get what I want, I'm currently studying computer science. Simultaneously, I practice piano and guitar. It's an inspiration to me. Museum visits, cinema, music, sport, rythm my daily life.",
 			details:
 			{
 				name:
@@ -115,11 +155,17 @@ var translations_EN = {
 		title:"Hobbies",
 		booklist:
 		{
-			title:"Reading list."
+			title:"Reading list"
 		},
 		movielist:
 		{
-			title:"Viewing list."
+			title:"Viewing list"
+		},
+		music:
+		{
+			title:"Music",
+			titleCat1:"What I practice",
+			titleCat2:"What I listen"
 		}
 	},
 	skill:
@@ -141,21 +187,53 @@ var translations_EN = {
 		{
 			title:"See project on Github"
 		}
+	},
+	contact:
+	{
+		title:"Contact",
+		name:
+		{
+			label:"Your name",
+			error:
+			{
+				required:"What's your name ?"
+			}
+		},
+		email:
+		{
+			label:"Your email",
+			error:
+			{
+				required:"Your email address will allow me to reply to you :)",
+				email:"Your address does not appear valid"
+			}
+		},
+		message:
+		{
+			label:"Your message",
+			error:
+			{
+				required:"You do not want to tell me? :("
+			}
+		},
+		btn:
+		{
+			send:"Send",
+			reset:"Reset"
+		}
 	}
 };
 
 app.config(['$translateProvider', function($translateProvider) {
 	$translateProvider.translations('fr', translations_FR);
 	$translateProvider.translations('en', translations_EN);
-	$translateProvider.preferredLanguage('fr');
+	$translateProvider.preferredLanguage('en');
 }]);
 
-app.controller('TranslateCtrl', ['$translate', '$scope', function ($translate, $scope) {
+app.controller('TranslateController', ['$translate', '$scope', function ($translate, $scope) {
   $scope.changeLanguage = function (langKey) {
     $translate.use(langKey);
   };
 }]);
-
-
 
 

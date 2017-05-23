@@ -1,4 +1,4 @@
-app.controller('HobbiesController', function() {
+app.controller('HobbiesController', function($scope) {
 	var vm = this;
 	vm.books_FR = [
 		{
@@ -69,17 +69,27 @@ app.controller('HobbiesController', function() {
 
 	vm.music_FR = [
 		{
-			"title":"Solfège",
+			"title":"Théorie",
 			"year_counter":"7 ans",
+			"level":5
 		},
 		{
 			"title":"Piano",
 			"year_counter":"7 ans",
+			"level":3
 		},
 		{
 			"title":"Guitare",
 			"year_counter":"7 ans",
-			"level":"Cycle 3 Année 1"
+			"level":5
 		}
 	]
+
+	$scope.range = function(count){
+	  var ratings = [];
+	  for (var i = 0; i < count; i++) { 
+	    ratings.push(i) 
+	  }
+	  return ratings;
+	}
 });
