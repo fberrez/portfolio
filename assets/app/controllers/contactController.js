@@ -4,7 +4,13 @@ angular.module('contactForm', [])
 
         $scope.send = function(user) {
             $scope.master = angular.copy(user);
-            //$http.post('http://localhost', $scope.formData)
+            console.log($scope.master);
+            if($scope.isOk() == true) {
+                console.log("$scope ok");
+                $http.post('http://localhost/portfolio-ui/script/mail.run.php', $scope.master);
+            } else {
+                console.log("$scope not ok");
+            }
         };
 
         $scope.reset = function(form) {
@@ -14,6 +20,10 @@ angular.module('contactForm', [])
             }
             $scope.user = angular.copy($scope.master);
         };
+
+        $scope.isOk = function() {
+            return ($scope.master.name != null && $scope.master.mail != null && $scope.master.message != null);
+        }
 
         $scope.reset();
     }]);

@@ -32,12 +32,16 @@
 
 	<!-- <div id="navbar" class="navbar"></div> -->
 	<div id="loader-wrapper">
-		<div class="loader-section">
-			<div class="section-left text-center" ng-click="changeLanguage('en')">	
-				<img id="loaderImgLeft" class="bkg-image" src="assets/img/bkg-loader-left.png">
-			</div>
-			<div class="section-right text-center" ng-click="changeLanguage('fr')">
-				<img id="loaderImgRight" class="bkg-image" src="assets/img/bkg-loader-right.jpg">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="row">
+					<div class="col-md-6 text-center">
+						<button class="btn-loader btn-loader-effect" ng-click="changeLanguage('en')">English</button>
+					</div>
+					<div class="col-md-6 text-center">
+						<button class="btn-loader btn-loader-effect" ng-click="changeLanguage('fr')">Francais</button>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>

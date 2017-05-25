@@ -2,8 +2,19 @@
 	<div class="page-header">
 	<h1 class="container-title blue text-center">{{'contact.title' | translate}}</h1>
 	</div>
-	<div class="col-md-12">
-		<div class="row" ng-controller="ContactController">
+	<div class="row">
+		<div class="col-md-6">
+			<span class="fa-stack fa-lg">
+				<i class="fa fa-square fa-stack-2x"></i>
+				<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+			</span>
+			<span><a href="mailto:contact@fberrez.com" title="contact@fberrez.com">contact@fberrez.com</a></span>
+		</div>
+		<div class="col-md-6">
+			<i class="fa fa-linkedin-square" aria-hidden="true"></i>
+			<span><a href="https://www.linkedin.com/in/florent-berrez-aaab91128/" title="Linkedin - Florent Berrez">Florent Berrez</span>
+		</div>
+<!-- 		<div class="row" ng-controller="ContactController">
 			<form name="form" novalidate>
 				<div class="col-md-6">
 					<div class="form-group">
@@ -33,13 +44,14 @@
 							<span class="label label-warning" ng-show="form.uMessage.$error.required">{{'contact.message.error.required' | translate}}</span>
 						</div>
 					</div>
+					{{user}}
 				</div>
 				<div class="col-md-6 text-center">
 					<button id="btnContactSubmit" class="special-button btn--border btn--primary btn--animated" type="submit" ng-click="send(user)"><i class="fa fa-paper-plane" aria-hidden="true"></i> {{'contact.btn.send' | translate}}</button><br>
 					<button id="btnContactSubmit" class="special-button btn--border btn--primary btn--animated" type="button" ng-click="reset(form)"><i class="fa fa-trash" aria-hidden="true"></i> {{'contact.btn.reset' | translate}}</button>
 				</div>
 			</form>
-		</div>
+		</div> -->
 	</div>
 
 

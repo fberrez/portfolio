@@ -59,7 +59,7 @@ app.controller('SkillController', function($scope){
 		},
 		{
 			"title":"Oracle SQL",
-			"level":2
+			"level":3
 		},
 		{
 			"title":"Bash",
@@ -75,7 +75,7 @@ app.controller('SkillController', function($scope){
 		},
 		{
 			"title":"Go",
-			"level":2
+			"level":1
 		}
 	];
 

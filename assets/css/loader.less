@@ -1,53 +1,81 @@
 /* https://ihatetomatoes.net/create-custom-preloading-screen/ */
 #loader-wrapper {
-	#loaderTitle {
-		z-index: 1001;
-		position: block;
-		top: 0;
-		right: 0;
-		left: 0;
-		width: 500px;
-		margin: 0 auto;
-		font-size: 50px;
-	}
+	z-index: 1000;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding-top: 25%;
+	background-color: rgba(0,0,0,0.8);
 
-	.loader-section {
-	    .section-left {
-			left: 0;
-			background: #222222;
+	//default button
+	.btn-loader {
+		color: #fff;
+		background-color: transparent;
+		cursor: pointer;
+		display: block;
+		font-size:50px;
+		font-weight: 400;
+		line-height: 45px;
+		margin: 0 auto 2em;
+		/*max-width: 200px; */
+		position: relative;
+		text-decoration: none;
+		text-transform: uppercase;
+		vertical-align: middle;
+		width: 100%;
+		border: none;
+
+		@media(min-width: 400px) {
+			display: inline-block;
+			margin-right: 2.5em;
+
+			&:nth-of-type(even) {
+			  margin-right: 0;
+			}
 		}
-		.section-right {
-			right: 0;
-			background: grey;
-		}
 
-		.section-left,
-		.section-right {
-			position: fixed;
-			z-index: 1000;
-			top: 0;
-			width: 50%;
-			height: 100%;
-			background-size: 110%;
-			background-repeat: no-repeat;
-			transition: all 0.3s ease-in-out;
-			-webkit-transition: all 0.3s ease-in-out;
-
-			.bkg-image {
-				width:100%;
-				height: 100%;
-				transition: all 0.3s ease-in-out;
-			    -webkit-transition: all 0.3s ease-in-out;
-			    -webkit-filter: grayscale(100%);
-    			filter: grayscale(100%);
-				&:hover {
-					width: 110%;
-					height: 110%;
-					-webkit-filter: grayscale(0%);
-    				filter: grayscale(0%);
-				}
+		@media(min-width: 600px) {
+			&:nth-of-type(even) {
+			  margin-right: 2.5em;
 			}
 
+			&:nth-of-type(5) {
+			  margin-right: 0;
+			}
 		}
+		&:hover { text-decoration: none; }
+	}
+
+	.btn-loader-effect {
+		letter-spacing: 0;
+		transition: all 280ms ease-in-out;
+	}
+	.btn-loader-effect:hover,
+	.btn-loader-effect:active {
+		letter-spacing: 5px;
+	}
+	.btn-loader-effect:after,
+	.btn-loader-effect:before {
+		backface-visibility: hidden;
+		border: 1px solid rgba(255,255,255, 0);
+		bottom: 0px;
+		content: " ";
+		display: block;
+		margin: 0 auto;
+		position: relative;
+		transition: all 280ms ease-in-out;
+		width: 0;
+	}
+	.btn-loader-effect:hover:after,
+	.btn-loader-effect:hover:before {
+		backface-visibility: hidden;
+		border-color: #fff;
+		transition: width 350ms ease-in-out;
+		width: 70%;
+	}
+	.btn-loader-effect:hover:before {
+		bottom: auto;
+		top: 0;
+		width: 70%;
 	}
 }
