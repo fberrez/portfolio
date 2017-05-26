@@ -1,58 +1,18 @@
 <div class="container container-padding">
 	<div class="page-header">
-	<h1 class="container-title blue text-center">{{'contact.title' | translate}}</h1>
+		<h1 class="container-title blue text-center">{{'contact.title' | translate}}</h1>
 	</div>
-	<div class="row">
-		<div class="col-md-6">
+	<div class="row" ng-controller="ContactController as contactCtrl"> 
+		<blockquote class="col-md-6" >
+			<p>The art of communication is the language of leadership</p>
+			<footer>James Humes</footer>
+		</blockquote>
+		<div class="col-md-6" ng-repeat="contact in contactCtrl.contacts">
 			<span class="fa-stack fa-lg">
 				<i class="fa fa-square fa-stack-2x"></i>
-				<i class="fa fa-envelope-o fa-stack-1x fa-inverse"></i>
+				<i class="fa fa-stack-1x ng-class:contact.icon;"></i>
 			</span>
-			<span><a href="mailto:contact@fberrez.com" title="contact@fberrez.com">contact@fberrez.com</a></span>
+			<span><a href="{{contact.link.href}}" title="{{contact.link.title}}" target="blank_">{{contact.link.text}}</a></span>
 		</div>
-		<div class="col-md-6">
-			<i class="fa fa-linkedin-square" aria-hidden="true"></i>
-			<span><a href="https://www.linkedin.com/in/florent-berrez-aaab91128/" title="Linkedin - Florent Berrez">Florent Berrez</span>
-		</div>
-<!-- 		<div class="row" ng-controller="ContactController">
-			<form name="form" novalidate>
-				<div class="col-md-6">
-					<div class="form-group">
-						<label>{{'contact.name.label' | translate}}
-							<input type="text" class="form-control" ng-model="user.name" name="uName" required="" />
-						</label>
-						<div class="contact-alert-div" ng-show="form.$submitted || form.uName.$touched">
-							<span class="label label-warning" ng-show="form.uName.$error.required">{{'contact.name.error.required' | translate}}</span>
-						</div>
-					</div>
-					<div class="form-group">
-						<label>{{'contact.email.label' | translate}}
-							<input type="email" class="form-control" ng-model="user.email" name="uEmail" required="" />
-						</label>
-						<br />
-						<div class="contact-alert-div" ng-show="form.$submitted || form.uEmail.$touched">
-							<span class="label label-warning" ng-show="form.uEmail.$error.required">{{'contact.email.error.required' | translate}}</span>
-							<span class="label label-warning" ng-show="form.uEmail.$error.email">{{'contact.email.error.email' | translate}}</span>
-						</div>
-					</div>
-					<div class="form-group">
-						<label>{{'contact.message.label' | translate}}
-							<textarea name="uMessage" class="form-control" ng-model="user.message" rows="5" required=""></textarea>
-						</label>
-						<br/>
-						<div class="contact-alert-div" ng-show="form.$submitted || form.uMessage.$touched">
-							<span class="label label-warning" ng-show="form.uMessage.$error.required">{{'contact.message.error.required' | translate}}</span>
-						</div>
-					</div>
-					{{user}}
-				</div>
-				<div class="col-md-6 text-center">
-					<button id="btnContactSubmit" class="special-button btn--border btn--primary btn--animated" type="submit" ng-click="send(user)"><i class="fa fa-paper-plane" aria-hidden="true"></i> {{'contact.btn.send' | translate}}</button><br>
-					<button id="btnContactSubmit" class="special-button btn--border btn--primary btn--animated" type="button" ng-click="reset(form)"><i class="fa fa-trash" aria-hidden="true"></i> {{'contact.btn.reset' | translate}}</button>
-				</div>
-			</form>
-		</div> -->
 	</div>
-
-
 </div>

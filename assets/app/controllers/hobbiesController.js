@@ -1,45 +1,45 @@
 app.controller('HobbiesController', function($scope) {
 	var vm = this;
-	vm.books_FR = [
+	vm.books = [
 		{
 			"title":"Tout le monde n'a pas eu la chance de rater ses études",
 			"author":"Olivier Roland",
-			"category":"Dev. Pers.",
+			"category":"Pers. Dev.",
 			"img":"tlmnpelcdrse"
 		},
 		{
-			"title":"Les 6 chapeaux de la réflexion",
+			"title":"Six Thinking Hats",
 			"author":"Edward de Bono",
-			"category":"Dev. Pers.",
-			"img":"6chapeaux"
+			"category":"Pers. Dev.",
+			"img":"6hats-en"
 		},
 		{
-			"title":"Le pouvoir des habitudes",
+			"title":"The Power of Habit",
 			"author":"Charles Duhigg",
-			"category":"Dev. Pers.",
-			"img":"habitudes"
+			"category":"Pers. Dev.",
+			"img":"habits-en"
 		},
 		{
-			"title":"Sapiens : Une brève histoire de l'humanité",
+			"title":"Sapiens: A Brief History of Humankind",
 			"author":"Yuval Noah Harari",
-			"category":"Dev. Pers.",
-			"img":"sapiens"
+			"category":"Pers. Dev.",
+			"img":"sapiens-en"
 		},
 		{
 			"title":"Clean Code",
 			"author":"Rober C. Martin Series",
-			"category":"Dev. Pers.",
+			"category":"Pers. Dev.",
 			"img":"cleancode"
 		},
 		{
 			"title":"Lean Startup",
 			"author":"Eric Ries",
-			"category":"Entreprenariat",
-			"img":"leanstartup",
+			"category":"Entrepreneurship",
+			"img":"leanstartup-en",
 		},
 	]
 
-	vm.movies_FR = [
+	vm.movies = [
 		{
 			"title":"The Walking Dead",
 			"img":"twd",
@@ -66,10 +66,37 @@ app.controller('HobbiesController', function($scope) {
 		},
 	]
 
-
-	vm.music_FR = [
+	vm.games = [
 		{
-			"title":"Théorie",
+			"title":"Deus Ex",
+			"img":"deusex",
+		},
+		{
+			"title":"R.U.S.E",
+			"img":"ruse",
+		},
+		{
+			"title":"Age of Empires II",
+			"img":"aoe2",
+		},
+		{
+			"title":"Civilization V",
+			"img":"civ5",
+		},
+		{
+			"title":"Europa Universalis IV",
+			"img":"eu4",
+		},
+		{
+			"title":"Borderlands",
+			"img":"borderlands",
+		},
+	]
+
+
+	vm.music = [
+		{
+			"title":"Theory",
 			"year_counter":"7 ans",
 			"level":5
 		},
@@ -79,7 +106,7 @@ app.controller('HobbiesController', function($scope) {
 			"level":3
 		},
 		{
-			"title":"Guitare",
+			"title":"Guitar",
 			"year_counter":"7 ans",
 			"level":5
 		}

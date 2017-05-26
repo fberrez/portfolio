@@ -1,4 +1,4 @@
-var app = angular.module('persoWebSiteApp', ['pascalprecht.translate', 'contactForm']);
+var app = angular.module('persoWebSiteApp', ['pascalprecht.translate']);
 
 
 /* -------------------------------------- ANGULAR TRANSLATE PARAMETERS -------------------------------------- */
@@ -12,10 +12,10 @@ var translations_FR = {
 	profile:
 	{
 		title:"Présentation",
-		about: 
+		about:
 		{
 			title:"A propos",
-			comment:"Issu des mondes informatique et artistique, le web m'a toujours passionné. Que ce soit dans sa dimension graphique ou son côté technique. Pour arriver à ce que je veux, je suis actuellement en étude d'informatique. En parallèle, je pratique le piano et la guitare. C'est une source d'inspiration pour moi. Les visites de musée, le cinéma, la musique, le sport rythment mon quotidien",
+			comment:"Issu des mondes informatique et artistique, le web m'a toujours passionné, que ce soit dans sa dimension graphique ou son côté technique. Pour arriver à ce que je veux, je suis actuellement en étude d'informatique. En parallèle, je pratique le piano et la guitare. C'est une source d'inspiration pour moi. Les visites de musée, le cinéma, la musique, le sport rythment mon quotidien",
 			details:
 			{
 				name:
@@ -37,87 +37,7 @@ var translations_FR = {
 	},
 	experience:
 	{
-		title: "Experiences",
-		courses: 
-		[
-			{
-				"name":"3ème année de Licence Informatique",
-				"badge":{
-						"color":"",
-						"icon":"glyphicon-education"
-					},
-				"dateStart":"2016", 
-				"dateStop":"2017",
-				"place":"Université de Valenciennes - Valenciennes, Nord (59), France", 
-				"notes":""
-			},
-			{
-				"name":"Contrat Apprentissage chez PCexpress",
-				"badge":{
-						"color":"info",
-						"icon":"glyphicon-briefcase"
-					},
-				"dateStart":"Nov. 2016", 
-				"dateStop":"Août 2017",
-				"place":"SARL PCexpress - Pont-Sainte-Maxence, Oise (60), France", 
-				"notes":""
-			},		
-			{
-				"name":"Obtention DUT en Informatique",
-				"badge":{
-						"color":"warning",
-						"icon":"glyphicon-star"
-					},
-				"dateStart":"Juin 2016",
-				"dateStop":"",
-				"place":"IUT de Maubeuge - Maubeuge, Nord (59), France",
-				"notes":""
-			},
-			{
-				"name":"Stage Superviseur réseau",
-				"badge":{
-						"color":"info",
-						"icon":"glyphicon-briefcase"
-					},
-				"dateStart":"Avr. 2016",
-				"dateStop":"Juil. 2016",
-				"place":"CSC Spain - Avilés, Asturies, Espagne",
-				"notes":""
-			},
-			{
-				"name":"Institut Universitaire de Technologie en Informatique",
-				"badge":{
-						"color":"",
-						"icon":"glyphicon-education"
-					},
-				"dateStart":"2014",
-				"dateStop":"2016",
-				"place":"IUT de Maubeuge - Maubeuge, Nord (59), France",
-				"notes":""
-			},
-			{
-				"name":"1ère année en Carrière Juridiques",
-				"badge":{
-						"color":"",
-						"icon":"glyphicon-education"
-					},
-				"dateStart":"2013",
-				"dateStop":"2014",
-				"place":"IUT de Laon - Laon, Aisne (02), France",
-				"notes":""
-			},
-			{
-				"name":"Baccalauréat Scientifique en Sciences de l'Ingénieur",
-				"badge":{
-						"color":"warning",
-						"icon":"glyphicon-star"
-					},
-				"dateStart":"Juin 2013",
-				"dateStop":"",
-				"place":"Lycée Marie Curie - Nogent-sur-Oise, Oise (60), France",
-				"notes":""
-			}
-		]
+		title: "Experiences"
 	},
 	hobbie:
 	{
@@ -129,6 +49,10 @@ var translations_FR = {
 		movielist:
 		{
 			title:"Ce que je regarde"
+		},
+		gamelist:
+		{
+			title:"Liste de jeux"
 		},
 		music:
 		{
@@ -206,7 +130,7 @@ var translations_EN = {
 		about: 
 		{
 			title:"About me",
-			comment:"Coming from the computer and artistic worlds, the web has always fascinated me. Whether in its graphic dimension or its technical side. To get what I want, I'm currently studying computer science. Simultaneously, I practice piano and guitar. It's an inspiration to me. Museum visits, cinema, music, sport, rythm my daily life.",
+			comment:"Coming from the computer and artistic worlds, the web has always fascinated me, whether in its graphic dimension or its technical side. To get what I want, I'm currently studying computer science. Simultaneously, I practice piano and guitar. It's an inspiration to me. Museum visits, cinema, music, sport, rythm my daily life.",
 			details:
 			{
 				name:
@@ -240,6 +164,10 @@ var translations_EN = {
 		movielist:
 		{
 			title:"Viewing list"
+		},
+		gamelist:
+		{
+			title:"Gaming list"
 		},
 		music:
 		{
