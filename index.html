@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="persoWebSiteApp">
 <head>
-	<title>Florent Berrez</title>
+	<title>Florent Berrez - Portfolio</title>
 
 	<!-- META TAG -->
 	<meta name="author" content="Florent Berrez"/>
@@ -16,19 +16,17 @@
 	<!-- Font family import CSS link -->
 	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
 
-	<link rel="stylesheet" type="text/css" href="node_modules/NavigationIndicators/NavigationIndicators/css/component.css">
-	<link rel="stylesheet" type="text/css" href="node_modules/NavigationIndicators/NavigationIndicators/css/normalize.css">
+	<link rel="stylesheet" type="text/less" href="assets/css/style.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/000-navbar/navbar.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/001-home/home.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/002-presentation/presentation.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/003-experience/experience.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/005-hobbies/hobbies.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/006-contact/contact.less">
-	<link rel="stylesheet" type="text/less" href="assets/css/style.less">
 
 
 </head>
-<body ng-controller="TranslateController as translateCtrl" data-ibg-bg="assets/img/bkg-home-tower-blur.jpg" data-spy="scroll" data-target=".navbar" data-offset="50">
+<body ng-controller="TranslateController as translateCtrl" data-spy="scroll" data-target=".navbar" data-offset="50">
 
 	<div id="navigation" class="navigation"></div>
 	
@@ -43,6 +41,7 @@
 	<div id="hobbie" class="hobbie"></div>
 
 	<div id="contact" class="contact"></div>
+
 	<!-- Libraries script links -->
 	<!-- JQuery JS link -->
 	<script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
@@ -55,10 +54,7 @@
 	<!-- Angular JS link -->
 	<script src="node_modules/angular/angular.js" type="text/javascript" charset="utf-8"></script>
 	<!-- Angular-translate JS link -->
-	<script src="node_modules/angular-translate/dist/angular-translate.js" type="text/javascript" charset="utf-8"></script>	
-	<!-- Navbar customization JS link -->
-	<script src="node_modules/NavigationIndicators/NavigationIndicators/js/main.js" type="text/javascript" charset="utf-8"></script>
-	<script src="node_modules/NavigationIndicators/NavigationIndicators/js/clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="node_modules/angular-translate/dist/angular-translate.js" type="text/javascript" charset="utf-8"></script>
 
 	<!-- assets script links -->
 	<script src="assets/app/app.js" type="text/javascript" charset="utf-8"></script>
@@ -72,7 +68,6 @@
 	<script src="assets/app/directives/006-contact/contact.js" type="text/javascript" charset="utf-8"></script>
 	<!-- controllers script links -->
 	<script src="assets/app/controllers/homeController.js" type="text/javascript" charset="utf-8"></script>
-	<script src="assets/app/controllers/presentationController.js" type="text/javascript" charset="utf-8"></script>
 	<script src="assets/app/controllers/experienceController.js" type="text/javascript" charset="utf-8"></script>
 	<script src="assets/app/controllers/skillController.js" type="text/javascript" charset="utf-8"></script>
 	<script src="assets/app/controllers/hobbiesController.js" type="text/javascript" charset="utf-8"></script>

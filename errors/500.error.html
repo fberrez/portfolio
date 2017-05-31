@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="persoWebSiteApp">
+<head>
+	<title>Florent Berrez - Portfolio - 403 error</title>
+	<!-- META TAG -->
+	<meta name="author" content="Florent Berrez"/>
+	<meta name="description" content="I'm Florent Berrez, a french web developer student, a musician, an art lover and a sportsman"/>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="icon" type="image/png" href="../assets/img/icon.png" />
+	<!-- Bootstrap CSS link -->
+	<link rel="stylesheet" type="text/css" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+	<!-- Font Awesome CSS link -->
+	<link rel="stylesheet" type="text/css" href="../node_modules/font-awesome/css/font-awesome.min.css">
+	<!-- Font family import CSS link -->
+	<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+
+	<link rel="stylesheet" type="text/less" href="../assets/css/style.less">
+	<link rel="stylesheet" type="text/less" href="../assets/css/error.less">
+
+
+</head>
+<body ng-controller="TranslateController as translateCtrl" data-spy="scroll" data-target=".navbar" data-offset="50">
+
+	<div id="error" class="error">
+		<div class="row centered-div text-left">
+		    <span class="blue">{{'error.main' | translate}}</span>
+		    <br>
+		    <span class="white">{{'error.500.description' | translate}}</span>
+		    <br>
+		    <span class="grey">{{'error.500.subtitle' | translate}}</span>
+		    <br>
+		    <span class="blue"><a href="../index.html" title="Home">{{'error.button' | translate}}</span>
+		</div>
+	</div>
+
+
+	<!-- Libraries script links -->
+	<!-- JQuery JS link -->
+	<script src="../node_modules/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Typed.js link -->
+	<script src="../node_modules/typed.js/dist/typed.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Bootstrap JS link -->
+	<script src="../node_modules/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Less JS link -->
+	<script src="../node_modules/less/dist/less.min.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Angular JS link -->
+	<script src="../node_modules/angular/angular.js" type="text/javascript" charset="utf-8"></script>
+	<!-- Angular-translate JS link -->
+	<script src="../node_modules/angular-translate/dist/angular-translate.js" type="text/javascript" charset="utf-8"></script>
+
+	<!-- assets script links -->
+	<script src="../assets/app/app.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>

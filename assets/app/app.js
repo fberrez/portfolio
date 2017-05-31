@@ -91,6 +91,25 @@ var translations_FR = {
         resume: {
             title: "Télécharger mon CV"
         }
+    },
+    error: {
+        main:"Je suis désolé :(",
+        403:
+        {
+            description:"Je ferai de mon mieux pour réparer ça",
+            subtitle:"Erreur 403"
+        },
+        404:
+        {
+            description:"Nous sommes perdus",
+            subtitle:"Erreur 404"
+        },
+        500:
+        {
+            description:"Je ferai de mon mieux pour réparer ça",
+            subtitle:"Erreur 500"
+        },
+        button:"Accueil"
     }
 };
 
@@ -183,6 +202,25 @@ var translations_EN = {
         resume: {
             title: "Download my resume"
         }
+    },
+    error: {
+        main:"I'm sorry :(",
+        403:
+        {
+            description:"I'll do my best to repair it",
+            subtitle:"403 Error"
+        },
+        404:
+        {
+            description:"We're lost",
+            subtitle:"404 Error"
+        },
+        500:
+        {
+            description:"I'll do my best to repair it",
+            subtitle:"500 Error"
+        },
+        button:"Go home"
     }
 };
 
