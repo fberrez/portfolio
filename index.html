@@ -6,8 +6,9 @@
 	<!-- META TAG -->
 	<meta name="author" content="Florent Berrez"/>
 	<meta name="description" content="I'm Florent Berrez, a french web developer student, a musician, an art lover and a sportsman"/>
-  	<meta charset="UTF-8"/>
-  	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta charset="UTF-8"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<link rel="icon" type="image/png" href="assets/img/icon.png" />
 	<!-- Bootstrap CSS link -->
 	<link rel="stylesheet" type="text/css" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 	<!-- Font Awesome CSS link -->
@@ -17,21 +18,20 @@
 
 	<link rel="stylesheet" type="text/css" href="node_modules/NavigationIndicators/NavigationIndicators/css/component.css">
 	<link rel="stylesheet" type="text/css" href="node_modules/NavigationIndicators/NavigationIndicators/css/normalize.css">
-	<link rel="stylesheet" type="text/less" href="assets/css/loader.less">
+	<link rel="stylesheet" type="text/less" href="assets/app/directives/000-navbar/navbar.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/001-home/home.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/002-presentation/presentation.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/003-experience/experience.less">
-	<link rel="stylesheet" type="text/less" href="assets/app/directives/004-skill/skill.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/005-hobbies/hobbies.less">
 	<link rel="stylesheet" type="text/less" href="assets/app/directives/006-contact/contact.less">
 	<link rel="stylesheet" type="text/less" href="assets/css/style.less">
 
 
 </head>
-<body ng-controller="TranslateController as translateCtrl" data-ibg-bg="assets/img/bkg-home-tower-blur.jpg">
+<body ng-controller="TranslateController as translateCtrl" data-ibg-bg="assets/img/bkg-home-tower-blur.jpg" data-spy="scroll" data-target=".navbar" data-offset="50">
 
-	<!-- <div id="navbar" class="navbar"></div> -->
-
+	<div id="navigation" class="navigation"></div>
+	
 	<div id="home" class="home"></div>
 
 	<div id="presentation" class="presentation"></div>
@@ -40,10 +40,9 @@
 
 	<div id="skill" class="skill"></div>
 
-	<div id="hobbies" class="hobbies"></div>
+	<div id="hobbie" class="hobbie"></div>
 
 	<div id="contact" class="contact"></div>
-
 	<!-- Libraries script links -->
 	<!-- JQuery JS link -->
 	<script src="node_modules/jquery/dist/jquery.min.js" type="text/javascript" charset="utf-8"></script>

@@ -4,23 +4,23 @@
     </div>
     <div class="row">
         <ul class="timeline" ng-controller="ExperienceController as expCtrl">
-            <li ng-class="{ 'timeline-inverted': $odd }" ng-repeat="step in expCtrl.steps_FR">
-              <div class="timeline-badge ng-class: step.badge.color;"><i class="glyphicon ng-class: step.badge.icon;"></i></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">{{step.name.en}}</h4>
-                  <h5 class="timeline-title">{{step.name.fr}}</h5>
-                  <p class="timeline-subtitle">
-                    <small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{step.dateStart}} <span ng-show="step.dateStop">- {{step.dateStop}}</span></small>
-                  </p>
-                  <p class="timeline-subtitle">
-                    <small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> {{step.place}}</small>
-                  </p>
+            <li ng-class="{ 'timeline-inverted': $odd }" ng-repeat="step in expCtrl.steps">
+                <div class="timeline-badge ng-class: step.badge.color;"><i class="glyphicon ng-class: step.badge.icon;"></i></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4 class="timeline-title">{{step.name.en}}</h4>
+                        <h5 class="timeline-title">{{step.name.fr}}</h5>
+                        <p class="timeline-subtitle">
+                            <small class="text-muted"><i class="glyphicon glyphicon-time"></i> {{step.dateStart}} <span ng-show="step.dateStop">- {{step.dateStop}}</span></small>
+                        </p>
+                        <p class="timeline-subtitle">
+                            <small class="text-muted"><i class="glyphicon glyphicon-map-marker"></i> {{step.place}}</small>
+                        </p>
+                    </div>
+                    <div class="timeline-body">
+                        <p>{{step.notes}}</p>
+                    </div>
                 </div>
-                <div class="timeline-body">
-                  <p>{{step.notes}}</p>
-                </div>
-              </div>
             </li>
         </ul>
     </div>

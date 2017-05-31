@@ -2,77 +2,77 @@
     <div class="page-header">
         <h1 class="container-title grey text-center">{{'hobbie.title' | translate}}</h1>
     </div>
-	<div class="row">
-    	<div class="col-md-12">
-    		<h2 class="grey">{{'hobbie.booklist.title' | translate}}</h2>
-			<div class="row">
-			  <div class="col-sm-4 col-md-2" ng-repeat="book in hobbiesCtrl.books" class="hobbie-list">
-			    <div class="thumbnail hobbie-thumb" ng-show="book.title">
-			      	<img ng-src="assets/app/directives/005-hobbies/assets/img/book-{{book.img}}.jpg" class="img-responsive hobbie-list-img" alt="{{book.title}}" ng-show="book.img">
-			      	<div class="caption">
-			        	<h3 class="hobbie-list-title">{{book.title}}</h3>
-			        	<p ng-show="book.author">{{book.author}}</p>
-			      	</div>
-			    </div>
-			  </div>
-			</div>
-			<h2 class="grey">{{'hobbie.movielist.title' | translate}}</h2>
-			<div class="row">
-			  <div class="col-sm-4 col-md-2" ng-repeat="movie in hobbiesCtrl.movies" class="hobbie-list">
-			    <div class="thumbnail hobbie-thumb" ng-show="movie.title">
-			      	<img ng-src="assets/app/directives/005-hobbies/assets/img/movie-{{movie.img}}.jpg" class="img-responsive hobbie-list-img" alt="{{movie.title}}" ng-show="movie.img">
-			      	<div class="caption">
-			        	<h3 class="hobbie-list-title">{{movie.title}}</h3>
-			      	</div>
-			    </div>
-			  </div>
-			</div>
-			<h2 class="grey">{{'hobbie.gamelist.title' | translate}}</h2>
-			<div class="row">
-			  <div class="col-sm-4 col-md-2" ng-repeat="game in hobbiesCtrl.games" class="hobbie-list">
-			    <div class="thumbnail hobbie-thumb" ng-show="game.title">
-			      	<img ng-src="assets/app/directives/005-hobbies/assets/img/game-{{game.img}}.jpg" class="img-responsive hobbie-list-img" alt="{{game.title}}" ng-show="game.img">
-			      	<div class="caption">
-			        	<h3 class="hobbie-list-title">{{game.title}}</h3>
-			      	</div>
-			    </div>
-			  </div>
-			</div>
-    	</div>
-	</div>
-	<div class="row">
-		<div class="page-header">
-	        <h1 class="text-center">{{'hobbie.music.title' | translate}}</h1>
-	    </div>
-	    <div class="row">
-	    	<div class="col-md-6">
-	    		<div class="row">
-	    			<h2>{{'hobbie.music.titleCat1' | translate}}</h2>
-	    		</div>
-	    		<div class="row">
-	    			<ul class="list-unstyled" ng-controller="HobbiesController as hobbiesCtrl">
-						<li class="tag-line" ng-repeat="tag in hobbiesCtrl.music">
-						<span class="tag-name">{{tag.title}}</span>
-						<span class="tag-score">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="grey">{{'hobbie.booklist.title' | translate}}</h2>
+            <div class="row">
+                <div class="col-sm-4 col-md-2" ng-repeat="book in hobbiesCtrl.books" class="hobbie-list">
+                    <div class="thumbnail hobbie-thumb" ng-show="book.title">
+                        <img ng-src="assets/app/directives/005-hobbies/assets/img/book-{{book.img}}.jpg" class="img-responsive hobbie-list-img" alt="{{book.title}}" ng-show="book.img">
+                        <div class="caption">
+                            <h3 class="hobbie-list-title">{{book.title}}</h3>
+                            <p ng-show="book.author">{{book.author}}</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="grey">{{'hobbie.movielist.title' | translate}}</h2>
+            <div class="row">
+                <div class="col-sm-4 col-md-2" ng-repeat="movie in hobbiesCtrl.movies" class="hobbie-list">
+                    <div class="thumbnail hobbie-thumb" ng-show="movie.title">
+                        <img ng-src="assets/app/directives/005-hobbies/assets/img/movie-{{movie.img}}.jpg" class="img-responsive hobbie-list-img" alt="{{movie.title}}" ng-show="movie.img">
+                        <div class="caption">
+                            <h3 class="hobbie-list-title">{{movie.title}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h2 class="grey">{{'hobbie.gamelist.title' | translate}}</h2>
+            <div class="row">
+                <div class="col-sm-4 col-md-2" ng-repeat="game in hobbiesCtrl.games" class="hobbie-list">
+                    <div class="thumbnail hobbie-thumb" ng-show="game.title">
+                        <img ng-src="assets/app/directives/005-hobbies/assets/img/game-{{game.img}}.jpg" class="img-responsive hobbie-list-img" alt="{{game.title}}" ng-show="game.img">
+                        <div class="caption">
+                            <h3 class="hobbie-list-title">{{game.title}}</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="page-header">
+            <h1 class="text-center">{{'hobbie.music.title' | translate}}</h1>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="row">
+                    <h2>{{'hobbie.music.titleCat1' | translate}}</h2>
+                </div>
+                <div class="row">
+                    <ul class="list-unstyled" ng-controller="HobbiesController as hobbiesCtrl">
+                        <li class="tag-line" ng-repeat="tag in hobbiesCtrl.music">
+                            <span class="tag-name">{{tag.title}}</span>
+                            <span class="tag-score">
 							<span class="filled-star" ng-repeat="n in range(tag.level)">
 								<span class="glyphicon glyphicon-star"></span>
-							</span>
-							<span class="normal-star" ng-repeat="n in range(5-tag.level)">
+                            </span>
+                            <span class="normal-star" ng-repeat="n in range(5-tag.level)">
 								<span class="glyphicon glyphicon-star"></span>
-							</span>
-						</span>
-						</li>
-					</ul>
-	    		</div>
-	    	</div>
-	    	<div class="col-md-6">
-	    		<div class="row">
-	    			<h2>{{'hobbie.music.titleCat2' | translate}}</h2>
-	    		</div>
-	    		<div class="row spotify">
-	    			<iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Adarlok2009%3Aplaylist%3A3EcmaVJxyEWxl4ledLmN5J" width="300" height="380" frameborder="0" allowtransparency="true" align="middle"></iframe>
-	    		</div>
-	    	</div>
-	    </div>
-	</div>
+                            </span>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <h2>{{'hobbie.music.titleCat2' | translate}}</h2>
+                </div>
+                <div class="row spotify">
+                    <iframe src="https://embed.spotify.com/?uri=spotify%3Auser%3Adarlok2009%3Aplaylist%3A3EcmaVJxyEWxl4ledLmN5J" width="300" height="380" frameborder="0" allowtransparency="true" align="middle"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

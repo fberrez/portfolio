@@ -1,18 +1,23 @@
 <div class="container container-padding">
-	<div class="page-header">
-		<h1 class="container-title blue text-center">{{'contact.title' | translate}}</h1>
-	</div>
-	<div class="row" ng-controller="ContactController as contactCtrl"> 
-		<blockquote class="col-md-6" >
-			<p>The art of communication is the language of leadership</p>
-			<footer>James Humes</footer>
-		</blockquote>
-		<div class="col-md-6" ng-repeat="contact in contactCtrl.contacts">
-			<span class="fa-stack fa-lg">
-				<i class="fa fa-square fa-stack-2x"></i>
-				<i class="fa fa-stack-1x ng-class:contact.icon;"></i>
-			</span>
-			<span><a href="{{contact.link.href}}" title="{{contact.link.title}}" target="blank_">{{contact.link.text}}</a></span>
-		</div>
-	</div>
+    <div class="page-header">
+        <h1 class="container-title blue text-center">{{'contact.title' | translate}}</h1>
+    </div>
+    <div class="row" ng-controller="ContactController as contactCtrl">
+        <blockquote class="col-md-6">
+            <p>The art of communication is the language of leadership</p>
+            <footer>James Humes</footer>
+        </blockquote>
+        <div class="col-md-6" ng-repeat="contact in contactCtrl.contacts">
+            <a class="social-link" href="{{contact.link.href}}" title="{{contact.link.title}}" target="blank_">
+                <span class="fa-stack fa-lg">
+					<i class="fa fa-square fa-stack-2x"></i>
+					<i class="fa fa-stack-1x ng-class:contact.icon;"></i>
+				</span>
+                <span>{{contact.link.text}}</span>
+            </a>
+        </div>
+    </div>
+    <div class="row text-center">
+        <a href="assets/file/Resume Florent Berrez.pdf" id="btnResume" class="special-button btn--border btn--primary btn--animated" target="blank_"><i class="fa fa-github" aria-hidden="true"></i> {{'contact.resume.title' | translate}}</a>
+    </div>
 </div>

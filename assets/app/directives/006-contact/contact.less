@@ -1,55 +1,76 @@
+/* -------------------------------------- VARIABLES INITIALISATION -------------------------------------- */
+
+@blue: #00cbcb;
+@white: #FFFFFF;
+@grey: #333333;
+@contact-grey: #434242;
 .contact {
-	background-color: #434242;
-	color: white;
-	padding-bottom: 50px;
-
-	i {
-		color: #434242;
-		&:first-child {
-			color: #E5E5E5;
-		}
-	}
-	a {
-		color: #E5E5E5;
-		&:hover {
-			text-decoration: none;
-			color: #00cbcb;
-		}
-	}
-
-	.form-group{
-		/*height: 75px;*/
-		label{
-			color: white;
-			width: 100%
-		}
-
-		input,
-		textarea {
-			width: 100%;
-		}
-
-		.form-control {
-			border-radius: 0px !important;
-		}
-
-		.contact-alert-div {
-			visibility: visible;
-			span {
-				visibility: visible;
-			}
-		}
-	}
-
-	textarea[name="uMessage"] {
-		resize:none;
-	}
-
-	.btn {
-		border-radius: 0px !important;
-	}
-
-	#btnContactSubmit {
-		background-color: #434242;
-	}
+    background-color: @contact-grey;
+    color: white;
+    padding-bottom: 50px;
+    a,
+    .fa {
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+    }
+    .social-link,
+    .social-link > .fa-stack > .fa {
+        -webkit-transition-property: color;
+        transition-property: color;
+        -webkit-transition-duration: 0.2s;
+        transition-duration: 0.2s;
+    }
+    i {
+        color: @contact-grey;
+    }
+    .fa-square {
+        color: #E5E5E5;
+    }
+    .fa-github {
+        color: @blue;
+    }
+    a.social-link {
+        color: #E5E5E5;
+        &:hover {
+            text-decoration: none;
+            color: @blue;
+            .fa-square {
+                color: @blue;
+            }
+        }
+    }
+    a:hover > i {
+        color: white;
+    }
+    .form-group {
+        /*height: 75px;*/
+        label {
+            color: white;
+            width: 100%
+        }
+        input,
+        textarea {
+            width: 100%;
+        }
+        .form-control {
+            border-radius: 0px !important;
+        }
+        .contact-alert-div {
+            visibility: visible;
+            span {
+                visibility: visible;
+            }
+        }
+    }
+    textarea[name="uMessage"] {
+        resize: none;
+    }
+    .btn {
+        border-radius: 0px !important;
+    }
+    #btnContactSubmit {
+        background-color: @contact-grey;
+    }
 }
