@@ -96,7 +96,7 @@ var translations_FR = {
         main:"Je suis désolé :(",
         403:
         {
-            description:"Je ferai de mon mieux pour réparer ça",
+            description:"Vous êtes trop curieux",
             subtitle:"Erreur 403"
         },
         404:
@@ -207,7 +207,7 @@ var translations_EN = {
         main:"I'm sorry :(",
         403:
         {
-            description:"I'll do my best to repair it",
+            description:"You are too curious",
             subtitle:"403 Error"
         },
         404:
