@@ -7,14 +7,16 @@
             <p>The art of communication is the language of leadership</p>
             <footer>James Humes</footer>
         </blockquote>
-        <div class="col-md-6" ng-repeat="contact in contactCtrl.contacts">
-            <a class="social-link" href="{{contact.link.href}}" title="{{contact.link.title}}" target="blank_">
-                <span class="fa-stack fa-lg">
-					<i class="fa fa-square fa-stack-2x"></i>
-					<i class="fa fa-stack-1x ng-class:contact.icon;"></i>
-				</span>
-                <span>{{contact.link.text}}</span>
-            </a>
+        <div class="col-md-6">
+            <div class="row" ng-repeat="contact in contactCtrl.contacts">
+                <a class="social-link" href="{{contact.link.href}}" title="{{contact.link.title}}" target="blank_">
+                    <span class="fa-stack fa-lg">
+    					<i class="fa fa-square fa-stack-2x"></i>
+    					<i class="fa fa-stack-1x ng-class:contact.icon;"></i>
+    				</span>
+                    <span>{{contact.link.text}}</span>
+                </a>
+            </div>
         </div>
     </div>
     <div class="row text-center">

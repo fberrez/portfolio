@@ -2,44 +2,46 @@
     display: none;
 }
 
-@media (min-width: 768px) {
-    .navbar {
-        display: block;
-        width: auto;
-        max-width: 200px;
-        position: fixed;
-        z-index: 10;
-        top: 30%;
-        right: 30px;
-        li {
-            width: 100%;
+@media screen {
+    @media (min-width: 1024px) {
+        .navbar {
+            display: block;
+            width: auto;
+            max-width: 200px;
+            position: fixed;
+            z-index: 10;
+            top: 30%;
+            right: 30px;
+            li {
+                width: 100%;
+            }
         }
-    }
-    .nav {
-        margin: 0;
-    }
-    .navbar-default {
-        border: none;
-        background-color: #333333;
-        color: white;
-    }
-    .navbar-collapse {
-        padding-right: 0px;
-        padding-left: 0px;
-    }
-    .navbar-nav>li>a {
-        color: white !important;
-        &:focus,
-        &:hover {
-            color: #00cbcb !important;
+        .nav {
+            margin: 0;
         }
-    }
-    .navbar-nav>.active>a {
-        background-color: #00cbcb !important;
-        color: #333 !important;
-        &:focus,
-        &:hover {
+        .navbar-default {
+            border: none;
+            background-color: #333333;
+            color: white;
+        }
+        .navbar-collapse {
+            padding-right: 0px;
+            padding-left: 0px;
+        }
+        .navbar-nav>li>a {
             color: white !important;
+            &:focus,
+            &:hover {
+                color: #00cbcb !important;
+            }
+        }
+        .navbar-nav>.active>a {
+            background-color: #00cbcb !important;
+            color: #333 !important;
+            &:focus,
+            &:hover {
+                color: white !important;
+            }
         }
     }
 }
