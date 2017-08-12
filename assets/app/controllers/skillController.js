@@ -3,16 +3,16 @@
         var vm = this;
         vm.programmingTags = [{
             "title": "JavaScript",
-            "level": 5
+            "level": 4
         }, {
             "title": "CSS",
-            "level": 5
+            "level": 4
         }, {
             "title": "HTML",
             "level": 5
         }, {
             "title": "JQuery",
-            "level": 5
+            "level": 4
         }, {
             "title": "AngularJS",
             "level": 3
@@ -24,7 +24,7 @@
             "level": 4
         }, {
             "title": "Java",
-            "level": 5
+            "level": 4
         }, {
             "title": "Assembler",
             "level": 2
@@ -35,29 +35,26 @@
             "title": "OCaml",
             "level": 3
         }, {
-            "title": "Prolog",
-            "level": 5
-        }, {
             "title": "MySQL",
-            "level": 5
+            "level": 4
         }, {
             "title": "PostgreSQL",
-            "level": 5
+            "level": 4
         }, {
             "title": "Oracle SQL",
             "level": 3
         }, {
             "title": "Bash",
-            "level": 5
+            "level": 4
         }, {
             "title": "PHP",
-            "level": 5
+            "level": 4
         }, {
             "title": "MiniZinc",
-            "level": 5
+            "level": 4
         }, {
             "title": "Go",
-            "level": 1
+            "level": 2
         }];
 
         vm.toolTags = [{
@@ -75,6 +72,9 @@
         }, {
             "title": "Eclipse",
             "level": 5
+        }, {
+            "title": "Affinity Designer",
+            "level": 3
         }]
 
         vm.languageTags = [{
