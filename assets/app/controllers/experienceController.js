@@ -3,6 +3,19 @@
         var vm = this;
         vm.steps = [{
             "name": {
+                "fr": "Master Technologies Nouvelles des Systèmes d'Information",
+                "en": "Msc Information Systems"
+            },
+            "badge": {
+                "color": "",
+                "icon": "glyphicon-education"
+            },
+            "dateStart": "2017",
+            "dateStop": "2019",
+            "place": "University of Valenciennes (FR) - University of Portsmouth (UK)",
+            "notes": ""
+        }, {
+            "name": {
                 "fr": "3ème année de Licence Informatique",
                 "en": "3rd year of Bachelor's Degree"
             },
