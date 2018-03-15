@@ -61,17 +61,10 @@ var translations_FR = {
         },
         project: {
             title: "Voir le projet sur Github"
-        },
-        blog: {
-          title: "Visiter mon blog"
         }
     },
     contact: {
         title: "Contact",
-        blockquote: {
-          text: "Toujours jouer le premier coup",
-          author: ""
-        },
         name: {
             label: "Votre nom",
             error: {
@@ -179,17 +172,10 @@ var translations_EN = {
         },
         project: {
             title: "See project on Github"
-        },
-        blog: {
-          title: "Visit my blog (FR)"
         }
     },
     contact: {
         title: "Contact",
-        blockquote: {
-          text: "Always make the first move",
-          author: ""
-        },
         name: {
             label: "Your name",
             error: {
@@ -241,7 +227,7 @@ var translations_EN = {
 app.config(['$translateProvider', function($translateProvider) {
     $translateProvider.translations('fr', translations_FR);
     $translateProvider.translations('en', translations_EN);
-    $translateProvider.preferredLanguage('fr');
+    $translateProvider.preferredLanguage('en');
 }]);
 
 app.controller('TranslateController', ['$translate', '$scope', function($translate, $scope) {

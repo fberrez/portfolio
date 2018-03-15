@@ -75,7 +75,7 @@
 
 
         vm.music = [{
-            "title": "Theory",
+            "title": "Théorie",
             "year_counter": "7 ans",
             "level": 5
         }, {
@@ -83,7 +83,7 @@
             "year_counter": "7 ans",
             "level": 3
         }, {
-            "title": "Guitar",
+            "title": "Guitare",
             "year_counter": "7 ans",
             "level": 5
         }]

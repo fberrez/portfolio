@@ -4,8 +4,8 @@
     </div>
     <div class="row" ng-controller="ContactController as contactCtrl">
         <blockquote class="col-md-6">
-            <p>The art of communication is the language of leadership</p>
-            <footer>James Humes</footer>
+            <p>{{'contact.blockquote.text' | translate}}</p>
+            <footer ng-show="{{contact.blockquote.author}}">{{'contact.blockquote.author' | translate}}</footer>
         </blockquote>
         <div class="col-md-6">
             <div class="row" ng-repeat="contact in contactCtrl.contacts">

@@ -12,7 +12,7 @@
             },
             "dateStart": "2017",
             "dateStop": "2019",
-            "place": "University of Valenciennes (FR) - University of Portsmouth (UK)",
+            "place": "University of Valenciennes - University of Portsmouth (UK)",
             "notes": ""
         }, {
             "name": {
