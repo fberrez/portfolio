@@ -30,12 +30,20 @@ body::before {
 .container-title {
     display: table-cell;
     /*text-align: center;*/
+    font-size: 6em;
     vertical-align: middle;
     text-transform: uppercase;
-    font-size: 6em;
     font-family: "AvantGarde", sans-serif;
     font-weight: normal;
     line-height: 0.8em;
+
+    @media only screen and (min-width: 481px) and (max-width: 1024px) {
+      font-size: 3em;
+    }
+
+    @media only screen and (max-width: 480px) {
+      font-size: 2em;
+    }
 }
 
 .container-padding {
@@ -44,7 +52,7 @@ body::before {
 }
 
 a:focus {
-    
+
 }
 
 
