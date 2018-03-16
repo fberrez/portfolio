@@ -1,0 +1,23 @@
+Options -Indexes
+
+# AddType application/x-httpd-php .php .php3 .php4 .php5 .php6 .php7 .inc .phtml
+
+<FilesMatch "\.(?:htaccess|bak|hide|txt|md|lic|sql)$">
+   order allow,deny
+   deny from all
+   allow from localhost
+   allow from 127.0.0.1
+   allow from ::1
+</FilesMatch>
+
+errorDocument 403 /errors/403.error.html
+errorDocument 404 /errors/404.error.html
+errorDocument 500 /errors/500.error.html
+
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI}
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^www.fberrez.com [NC]
+RewriteRule ^(.*)$ https://fberrez.com/$1 [L,R=301,NC]
